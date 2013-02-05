@@ -1,0 +1,26 @@
+&system
+   filePos     =  'h3oplus.pos'
+   fileCel     =  'h3oplus.cel'
+   ntsp        =  2,
+   nsp(1)      =  63,
+   nsp(2)      =  127,
+   stepstart   =  50000
+   rdefect     =  1.1655
+   calc_delta  = .true.
+   calc_rdf    = .true.
+/
+
+&hbonds
+   Hbond_cut   =  3.5
+   Hbond_angle = 145.0
+/
+
+&ddelta
+   delta_donate=.true.
+/
+&rdf
+   filerdf_root = 'gOstarOw'
+   atom1 = 1
+   atom2 = 1
+   binNum = 80
+/

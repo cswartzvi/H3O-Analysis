@@ -1,0 +1,51 @@
+###########################################################
+# Local Exclude file for QE
+###########################################################
+exx-checklist
+###############################
+# General ext
+###############################
+*.a
+*.F90
+*.mod
+*.o
+*.x
+*.aux
+*.pxdf
+*.log
+*.toc
+*.tgz
+*.html
+*.txt
+*.xml
+*.pdf
+
+
+
+###############################
+# Files from the configure script
+###############################
+c_defs.h
+fft_defs.h
+config.log
+config.status
+make_blas.inc
+make_lapack.inc
+make_wannier90.sys
+make.sys
+
+
+###############################
+# Files form make
+###############################
+version.f90
+plumed_quick_ref.out
+
+###############################
+# Directories 
+###############################
+bin/*
+BLAS/*
+iotk
+lapack-3.2/*
+S3DE/

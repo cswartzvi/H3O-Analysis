@@ -372,7 +372,7 @@ Module Hbonds_module
                temp_donate = temp_donate + 1
             endif  
             !------------------------------------------
-#ndif
+#endif
             !
             !
             select case (no)

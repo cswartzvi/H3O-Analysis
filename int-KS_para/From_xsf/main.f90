@@ -595,6 +595,18 @@
          stop
       endif
       !
+      !Open raw output file (no broadening)
+      open(unit=4, file=output//raw, IOSTAT=ierr, STATUS='UNKNOWN')
+      if (ierr /= 0 ) then
+         write (*,*) '  ERROR: There was some issue opeing the intKS.dat file'
+         stop
+      endif
+      !
+      !Write the raw file (Easier to find peak states) before broadening
+      do ns=1, nbnd,1
+         write(4,*) ns, val(ns)
+      enddo
+      close(4)
       !
       !Final packagin of the ldos and E values
       do i=1,nE,1
